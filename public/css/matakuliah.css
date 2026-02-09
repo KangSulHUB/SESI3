@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #667eea;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.35);
+}
+
+li::before {
+    content: "📚";
+    margin-right: 12px;
+    font-size: 1.3em;
+}
+
+li:nth-child(odd) {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+li:nth-child(even) {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    li {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+}
